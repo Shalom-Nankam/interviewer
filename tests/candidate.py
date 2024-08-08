@@ -42,6 +42,7 @@ def complete_interview(
     :param max_messages: Maximum number of messages in the conversation.
     :return: Tuple containing the file path and interview data.
     """
+    client = OpenAI(base_url="https://api.openai.com/v1", api_key="sk-proj-bLRAmmhYIdC6aoo7YvcrT3BlbkFJCz9R1x8nVijvqf5f8u64")
     config = Config()
     if llm_config:
         config.llm = llm_config
